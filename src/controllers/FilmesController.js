@@ -5,9 +5,9 @@ export const getAll = async (req, res) => {
         const filmes = await Filmes.findAll({
             order: [["nome", "ASC"]]
         })
-        res.render('index.ejs', {
+        res.status(200).render('index.ejs', {
             filmes,
-        }).status(200)
+        })
     } catch (err) {
         res.status(500).send({
             err: err.message
