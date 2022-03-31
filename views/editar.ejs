@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/criar.css" type="text/css">
+    <title>Criar</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <fieldset id="main-fieldset">
+            <legend> Editando o Filme <br /> <h1> <%= filme.nome %> </h1> </legend>
+            <form action="/editar_enviar/<%= filme.id %> " method="post">
+                <fieldset>
+                    <input type="text" name="nome" value="<%= filme.nome %>" required>
+                    <label for="nome"> Nome </label>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="number" name="ano" value="<%= filme.ano %>" required>
+                    <label for="ano"> Ano </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="url" name="img" value="<%= filme.img %>" required>
+                    <label for="img"> Url da Imagem </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="text" name="duracao" value="<%= filme.duracao%>" required>
+                    <label for="duracao"> Duração </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="text" name="diretores" value="<%= filme.diretores %>" required>
+                    <label for="diretores"> Diretore(a)s </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="text" name="iframe" value="<%= filme.iframe %>" required>
+                    <label for="iframe"> Url Iframe </label>
+                </fieldset>
+
+                <div id="btn-container">
+                    <button type="submit"> Enviar </button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

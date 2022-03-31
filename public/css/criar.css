@@ -1,0 +1,139 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: url('../fonts/Merchant Copy Doublesize.ttf');
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Digital';
+  font-size: 0.8rem;
+}
+
+:root {
+  --bg-color-main: #000;
+  --text-color-main: #fff;
+  --nav-color-main: #0E0E0E;
+  --bg-color-input: #272727;
+}
+
+.dark_mode {
+  --bg-color-main: #fff;
+  --text-color-main: #000;
+}
+
+body {
+  background-color: var(--bg-color-main);
+  color: var(--text-color-main);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-main);
+}
+
+header {
+  background-color: var(--nav-color-main);
+}
+
+header div {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header div ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+header div input {
+  background-color: var(--bg-color-input);
+  color: var(--text-color-main);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+header li:hover {
+  color: #67AC6B;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+main .card-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  width: 150px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+main .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  width: 80%;
+}
+
+main .card-image img {
+  width: 100%;
+}
+
+main table {
+  text-align: center;
+}
+
+main table td,
+main table thead>tr>th {
+  border: 1px solid white;
+}
+
+main table tr:nth-child(even) {
+  background-color: #BD332D;
+}
+
+main h1 {
+  color: #fff;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main fieldset#main-fieldset {
+  border: 1px solid white;
+}
+
+main legend {
+  background-color: #67AC6B;
+}
+
+main div#btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main button {
+  width: 50px;
+}
+
+/*# sourceMappingURL=criar.css.map */
