@@ -9,9 +9,6 @@
 </head>
 <body>
     <%- include('./partials/header.ejs') %>
-    <% if (!filmes) { %>
-        <%- include('./partials/modal.ejs') %>
-    <% } %>
     <main>
         <% filmes.forEach(element => { %>
             <a href="detalhes/<%= element.id %> ">

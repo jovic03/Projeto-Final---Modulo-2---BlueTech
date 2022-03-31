@@ -1,7 +1,5 @@
 import { Filmes } from '../models/Filmes.js'
 
-let modalToggle = true
-
 export const getAll = async (req, res) => {
     try {
         const filmes = await Filmes.findAll({
@@ -9,7 +7,6 @@ export const getAll = async (req, res) => {
         })
         res.render('index.ejs', {
             filmes,
-            modalToggle,
         }).status(200)
     } catch (err) {
         res.status(500).send({
