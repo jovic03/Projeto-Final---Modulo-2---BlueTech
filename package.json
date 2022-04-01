@@ -18,5 +18,15 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AiltonRafael/Projeto-Final---Modulo-2---BlueTech.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/AiltonRafael/Projeto-Final---Modulo-2---BlueTech/issues"
+  },
+  "homepage": "https://github.com/AiltonRafael/Projeto-Final---Modulo-2---BlueTech#readme",
+  "description": ""
 }
