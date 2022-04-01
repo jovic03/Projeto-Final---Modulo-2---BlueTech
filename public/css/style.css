@@ -27,6 +27,10 @@ body {
   color: var(--text-color-main);
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-family: Permanent Marker;
+  background-image: url('../img/blurryBackground.png');
+  background-repeat: no-repeat;
+  background-size: 250%;
+  
 }
 
 a {
