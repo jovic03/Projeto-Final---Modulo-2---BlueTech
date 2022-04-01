@@ -4,26 +4,29 @@
 }
 
 @font-face {
-  font-family: "Digital";
-  src: url("../fonts/Merchant Copy Doublesize.ttf");
+  /* font-family: "Digital";
+  src: url("../fonts/Merchant Copy Doublesize.ttf"); */
+  font-family: 'Permanent Marker', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 }
 
 :root {
-  --bg-color-main: #000;
-  --text-color-main: #fff;
-  --nav-color-main: #0E0E0E;
-  --bg-color-input: #272727;
+  --bg-color-main: #0e7cb9;
+  --text-color-main: #F7F708;
+  --nav-color-main: #C22307;
+  --bg-color-input: #F7F708;
 }
 
-.dark_mode {
+/* .dark_mode {
   --bg-color-main: #fff;
   --text-color-main: #000;
-}
+} */
 
 body {
   background-color: var(--bg-color-main);
   color: var(--text-color-main);
-  font-family: "Digital";
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: Permanent Marker;
 }
 
 a {
@@ -36,7 +39,7 @@ a {
 
 header {
   background-color: var(--nav-color-main);
-  font-size: 0.8rem;
+  font-size: xx-large;
 }
 
 header div {
@@ -55,13 +58,13 @@ header div ul {
 
 header div input {
   background-color: var(--bg-color-input);
-  color: var(--text-color-main);
+  color: #C22307;
   border-radius: 0.3rem;
   padding: 0.3rem;
 }
 
 header li:hover {
-  color: #67AC6B;
+  color: #0e7cb9;
 }
 
 main {
@@ -141,7 +144,7 @@ div.modal {
   width: 50%;
   transform: translate(-50%, 0);
   height: 150px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   z-index: 1;
 }
 

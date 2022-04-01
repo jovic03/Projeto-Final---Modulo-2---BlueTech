@@ -4,40 +4,44 @@
 }
 
 @font-face {
-  font-family: 'Digital';
-  src: url('../fonts/Merchant Copy Doublesize.ttf');
+  /* font-family: "Digital";
+  src: url("../fonts/Merchant Copy Doublesize.ttf"); */
+  font-family: 'Permanent Marker', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 }
 
 body {
   box-sizing: border-box;
-  font-family: 'Digital';
+  font-family: 'Permanent Marker';
   font-size: 0.8rem;
 }
 
-:root {
-  --bg-color-main: #000;
-  --text-color-main: #fff;
-  --nav-color-main: #0E0E0E;
-  --bg-color-input: #272727;
+:root {/*body do criar*/
+  --bg-color-main: #F7F708;
+  --text-color-main: #0e7cb9;
+  --nav-color-main: #C22307;
+  --bg-color-input: #F7F708;
 }
 
-.dark_mode {
+/* .dark_mode {
   --bg-color-main: #fff;
   --text-color-main: #000;
-}
+} */
 
 body {
   background-color: var(--bg-color-main);
   color: var(--text-color-main);
+  font-size: 20px;
 }
 
-a {
+a {/*links do inicio e criar*/
   text-decoration: none;
-  color: var(--text-color-main);
+  color: #F7F708;
 }
 
 header {
   background-color: var(--nav-color-main);
+  font-size: xx-large;
 }
 
 header div {
@@ -55,14 +59,14 @@ header div ul {
 }
 
 header div input {
-  background-color: var(--bg-color-input);
-  color: var(--text-color-main);
+  background-color: var(--bg-color-input);/*cor da caixa do input*/
+  color: var(--nav-color-main);/*cor do texto do imput de pesquisa*/
   border-radius: 0.3rem;
   padding: 0.3rem;
 }
 
 header li:hover {
-  color: #67AC6B;
+  color: #0e7cb9; /*hover do inicio e criar*/
 }
 
 main {
@@ -101,7 +105,7 @@ main table {
 
 main table td,
 main table thead>tr>th {
-  border: 1px solid white;
+  border: 10px solid rgb(255, 255, 255);
 }
 
 main table tr:nth-child(even) {
@@ -109,7 +113,7 @@ main table tr:nth-child(even) {
 }
 
 main h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 main form {
@@ -119,11 +123,11 @@ main form {
 }
 
 main fieldset#main-fieldset {
-  border: 1px solid white;
+  border: 7px dashed #C22307;/*borda do cadastro criar*/
 }
 
 main legend {
-  background-color: #67AC6B;
+  background-color: #000000;
 }
 
 main div#btn-container {

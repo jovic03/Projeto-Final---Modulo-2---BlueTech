@@ -4,32 +4,31 @@
 }
 
 @font-face {
-  font-family: 'Digital';
-  src: url('../fonts/Merchant Copy Doublesize.ttf');
+  /* font-family: "Digital";
+  src: url("../fonts/Merchant Copy Doublesize.ttf"); */
+  font-family: 'Permanent Marker', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 }
 
 body {
-  font-family: 'Digital';
+  font-family: 'Permanent Marker';
   box-sizing: border-box;
   font-size: 0.8rem;
-}
-
-:root {
-  --bg-color-main: #000;
-  --text-color-main: #fff;
-  --nav-color-main: #0E0E0E;
-  --bg-color-input: #272727 ;
-}
-
-.dark_mode {
-  --bg-color-main: #fff;
-  --text-color-main: #000 ;
-}
-
-body {
   background-color: var(--bg-color-main);
   color: var(--text-color-main);
 }
+
+:root {
+  --bg-color-main: #C22307;
+  --text-color-main: #F7F708;
+  --nav-color-main: #0e7cb9;
+  --bg-color-input: #F7F708;
+}
+
+/* .dark_mode {
+  --bg-color-main: #fff;
+  --text-color-main: #000 ;
+} */
 
 a {
   text-decoration: none;
@@ -38,6 +37,7 @@ a {
 
 header {
   background-color: var(--nav-color-main);
+  font-size: xx-large;
 }
 header div {
   display: flex;
@@ -53,13 +53,13 @@ header div ul {
 }
 header div input {
   background-color: var(--bg-color-input);
-  color: var(--text-color-main);
+  color: #C22307;
   border-radius: 0.3rem;
   padding: 0.3rem;
 }
 
 header li:hover {
-  color: #67AC6B;
+  color: #C22307;
 }
 
 main {
@@ -75,19 +75,22 @@ main .card-image img {
 }
 main table {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 main table td, main table thead > tr > th {
-  border: 1px solid white;
+  border: 7px solid #F7F708;
+  font-size: larger;
+  min-width: 500px
 }
 main table tr:nth-child(even) {
-  background-color: #67AC6B;
+  background-color: #0e7cb9;
 }
 main h1 {
-  color: white;
+  color: #F7F708;
   font-size: 0.8rem;
   -webkit-text-stroke-width: 0.04px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #0e7cb9;
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=detalhes.css.map */
